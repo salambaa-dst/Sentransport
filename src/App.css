@@ -1,36 +1,22 @@
 .App {
   font-family: Arial, sans-serif;
   min-height: 100vh;
+  background-color: #f5f6fa;
   display: flex;
   flex-direction: column;
 }
 
 .contenu {
-  padding: 24px 20px;
+  padding: 20px;
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
   flex: 1;
 }
 
-.welcome {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.6;
-  margin-bottom: 32px;
-}
-
-.stats-titre {
-  font-size: 1rem;
-  color: #555;
-  font-weight: 500;
-  margin: 0 0 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+@media (max-width: 600px) {
+  .contenu {
+    padding: 12px;
+  }
 }

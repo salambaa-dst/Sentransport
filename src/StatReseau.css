@@ -1,0 +1,32 @@
+.stat-reseau {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 0 16px 24px;
+}
+
+.stat-reseau-carte {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border-top: 3px solid #0a6e31;
+}
+
+.stat-reseau-nombre {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0a6e31;
+  line-height: 1;
+}
+
+.stat-reseau-label {
+  font-size: 0.75rem;
+  color: #7f8c8d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
