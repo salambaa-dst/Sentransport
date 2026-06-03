@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import Meteo from './Meteo';
+import SignalerIncident from './SignalerIncident';
 import Header from './Header';
 import Recherche from './Recherche';
 import LigneBus from './LigneBus';
@@ -79,6 +81,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Meteo />
       <p className="compteur-recherche">
         Vous avez effectué {nbRecherches} recherche{nbRecherches > 1 ? 's' : ''}
       </p>
@@ -106,14 +109,13 @@ function App() {
             estSelectionnee={ligneSelectionnee && ligneSelectionnee.id === ligne.id}
             onClick={() => handleClickLigne(ligne)}
           />
-          
         ))}
         {ligneSelectionnee && <DetailLigne ligne={ligneSelectionnee} />}
-      <Carte />
+        <Carte />
+        <SignalerIncident />
       </main>
       <Footer />
     </div>
-    
   );
 }
 
